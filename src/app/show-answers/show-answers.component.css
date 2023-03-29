@@ -1,0 +1,12 @@
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+}

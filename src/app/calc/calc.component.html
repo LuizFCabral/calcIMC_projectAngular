@@ -1,0 +1,18 @@
+<form class="container">
+  <div class="col-md-10">
+    <section class="col-md-6">
+      <div class="site-content">
+        <h2>Calculadora Básica</h2>
+        <div class="col-md-12">
+          <app-input (sendValue)="getAlt($event)" [name]="'altura'"></app-input>
+          <app-input (sendValue)="getPeso($event)" [name]="'peso'"></app-input>
+          <app-button (click)="calc()"></app-button>
+        </div>
+      </div>
+      <app-show-answers
+        *ngIf="visibility"
+        [result]="result.toString()"
+      ></app-show-answers>
+    </section>
+  </div>
+</form>
